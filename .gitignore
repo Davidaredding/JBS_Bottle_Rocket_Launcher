@@ -1,2 +1,3 @@
 *.skp
 !Launcher.skp
+node/node_modules
