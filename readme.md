@@ -31,6 +31,7 @@ A complete hardware breakdown with Amazon/Ebay links is included in the source b
 ```
     cd node
     npm install
+    node main.js
 ```
 
 ### Arduino
