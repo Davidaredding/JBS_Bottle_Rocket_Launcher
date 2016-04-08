@@ -1,5 +1,7 @@
 # JBS Bottle Rocket Demo #
 ---
+**Please note, While i've tried to construct this in the safest way possible, I am not an electrical engineer. By cloning and working with this guide, you assume `all` risks associated with this project**
+
     Inspired by the JBS Brown bag lunch and learn?  Don't know what any of that is but still want to launch bottle rockets over Bluetooth LE via your iphone?  You're in the right spot! Lets do some pyro-techinc-science!!
 
     A complete hardware breakdown with Amazon/Ebay links is included in the source but the quick and dirty version is...
