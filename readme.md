@@ -18,6 +18,7 @@ A complete hardware breakdown with Amazon/Ebay links is included in the source b
 * 34ga Nichrome wire
     * Alternativly, you can blow up some resistors,  you'll need 2 per rocket @ around 4.7 ohms
 * Something to launch the rockets from.
+
 ---
 * The SKP file is a [sketchup](http://www.sketchup.com/) file containing the model for the launcher.
 * The node directory contains a simple serial testing application with references to Express to ease web development
