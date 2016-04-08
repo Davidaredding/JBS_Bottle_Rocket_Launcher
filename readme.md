@@ -4,6 +4,8 @@
 
 Inspired by the JBS Brown bag lunch and learn?  Don't know what any of that is but still want to launch bottle rockets over Bluetooth LE via your iphone?  You're in the right spot! Lets do some pyro-techinc-science!!
 
+The goal of this project is not to show off clever code (quite the oppsite actually) or elegant design.  It's inteded to be a demonstration of whats possible with a little bit of simple code and some imagination.  The code is intentionally simple, avoiding many deeper concepts.  In some places I sacrifice performance for the sake of readibilty.  Please feel free to modify this code to _your_ liking and submit a pull request.  New and better branches are always welcome!!
+
 A complete hardware breakdown with Amazon/Ebay links is included in the source but the quick and dirty version is...
 * An Arduino, Teensy or ATTiny
 * a 5v relay breakout board
