@@ -22,9 +22,12 @@ A complete hardware breakdown with Amazon/Ebay links is included in the source b
 ---
 * The SKP file is a [sketchup](http://www.sketchup.com/) file containing the model for the launcher.
 * The node directory contains a simple serial testing application with references to Express to ease web development
+
 ---
 ## Software Setup
+
 ### Node
+
 ```
     cd node
     npm install
@@ -34,5 +37,5 @@ A complete hardware breakdown with Amazon/Ebay links is included in the source b
 
     Open "JBS_Bottle_Rocket.ino" file from the Arduino IDE and Upload the file as normal
  
- ### Cordova
- > More on this to come.
+### Cordova
+> More on this to come.
