@@ -1,0 +1,111 @@
+.app{
+    width:100%;
+    height:100%;
+    position: relative;
+
+    display: flex;
+    justify-content:center;    
+    flex-flow:row wrap;
+    align-content: flex-start;
+    padding-top: 30px;
+}
+
+.app .button{
+    background-color: #E3F2FD;
+    border: 7px solid #616161;
+    width:125px;
+    height:125px;
+    margin:5px;
+    box-sizing: border-box;
+    box-shadow: inset 0px 0px 25px 3px #2196F3;
+    text-align: center;
+    line-height: 1.7;
+    font-size: 4em;
+    font-family: 'Arial Bold';
+    font-weight: bolder;
+}
+
+.app .launch_button{
+    box-shadow: inset 0px 0px 25px 3px red;
+    font-size: 1.8em;
+    line-height: 3.9em;
+}
+
+.app .fired{
+    box-shadow: inset 0px 0px 45px 14px #424242;
+    color: #424242;
+    background-color: gray;
+}
+
+.app .dud_button{
+    background-color: #212121;
+    box-shadow: none;
+}
+
+.app .control{
+    padding-top: 25px;
+    height: 50px;
+    background-color: black;
+    margin-top: 17px;
+    margin-left:10px;
+    margin-right:10px;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    height:100%;
+    width:100%;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
