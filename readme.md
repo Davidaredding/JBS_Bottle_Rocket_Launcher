@@ -11,6 +11,7 @@ The goal of this project is not to show off clever code (quite the oppsite actua
 
 A complete hardware breakdown with Amazon/Ebay links is included in the source but the quick and dirty version is...
 * An Arduino, Teensy or ATTiny
+* A bluetooth LE breakout
 * a 5v relay breakout board
 * A 2s lipo battery or equivilent, we're after the max current rating mainly.
 * A voltage regulator capable of 1 amp per relay you want to be silmitainously active (EG, 8amps if you want to launch 8 bottle rockets at the same time)
