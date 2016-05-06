@@ -1,49 +1,294 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="BottleRocketLauncher">
+  <head>
+    <title>WORP</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script>
+    //prevent scrolling
+    window.addEventListener('load',function(){
+      document.body.addEventListener('touchmove',function(e){
+        e.preventDefault();
+      },false);
+    },false);
+    </script>
 
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
-<html>
-    <head>
-        <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+  </head>
+<body ng-controller="BottleRocketLauncherController as Main">
+  <div id="app">
+    <div id="main">
+      <div class="content">
+        <section id="status">
+          <div class="crt">
+            <div class="screen">
+              <div class="layer">
+                <div id="status-messages">
+                  <div class="message-container message-1">
+                    <div class="crt-message">Global Thermonuclear War Initiated<span class="cursor"> </span></div>
+                  </div>
+                  <div class="message-container message-2">
+                    <div class="crt-message">Missles Enabled<span class="cursor"> </span></div>
+                  </div>
+                  <div class="message-container">
+                    <div class="crt-message message-3">Target Selection: Complete<span class="cursor"> </span></div>
+                  </div>
+                  <div class="message-container message-4">
+                    <div class="crt-message">Time on Target Sequence: Complete<span class="cursor"> </span></div>
+                  </div>
+                  <div class="message-container message-5">
+                    <div class="crt-message">Yield Selection: Complete<span class="cursor"> </span></div>
+                  </div>
+                  <div class="message-container message-6">
+                    <div class="crt-message">Launch Time: >> Awaiting Codes <<<span class="cursor"> </span></div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+        </section>
+        <section id="missles">
+          <h2><span class="head">Missle Selection</span></h2>
+          <div class="crt">
+            <div class="screen">
+              <div class="layer">
+                <div class="output">
+                  <ul>
+                    <li ng-repeat="button in Main.rocketButtons">
+                      <a class="rocketButton"><span>{{button.display}}</span></a>
+                    </li>
+                  </ul>
+                  <div class="cf"></div>
+                </div>
+              </div>
+              <div class="overlay"></div>
+            </div>
+          </div>
+        </section>
+        <section id="method">
+          <div class="cutout">
+            <ul>
+              <li><a href="#" class="active immediate"><span>Immediate Launch</span></a></li>
+              <li><a href="#" class="queue"><span>Multi-Launch</span></a></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div id="sidebar">
+    <div class="content">
+      <section id="wopr">
+        <div class="cutout">
+          <div class="inset">
+            <div class="inset2">
+              <div class="grid grid-1">
+                <ul>
+                  <li>
+                    <div class="light light-7"></div>
+                  </li>
+                  <li>
+                    <div class="light"></div>
+                  </li>
+                  <li>
+                    <div class="light light-3"></div>
+                  </li>
+                  <li>
+                    <div class="light"></div>
+                  </li>
+                  <li>
+                    <div class="light light-1"></div>
+                  </li>
+                  <li>
+                    <div class="light light-4"></div>
+                  </li>
+                </ul>
+              </div>
+              <div class="grid grid-2">
+                <ul>
+                  <li>
+                    <div class="light"></div>
+                  </li>
+                  <li>
+                    <div class="light"></div>
+                  </li>
+                  <li>
+                    <div class="light  light-1"></div>
+                  </li>
+                  <li>
+                    <div class="light"></div>
+                  </li>
+                  <li>
+                    <div class="light  light-2"></div>
+                  </li>
+                  <li>
+                    <div class="light   light-3"></div>
+                  </li>
+                  <li>
+                    <div class="light   light-4"></div>
+                  </li>
+                  <li>
+                    <div class="light   light-5"></div>
+                  </li>
+                  <li>
+                    <div class="light "></div>
+                  </li>
+                  <li>
+                    <div class="light"></div>
+                  </li>
+                  <li>
+                    <div class="light"></div>
+                  </li>
+                  <li>
+                    <div class="light"></div>
+                  </li>
+                  <li>
+                    <div class="light"></div>
+                  </li>
+                  <li>
+                    <div class="light light-7"></div>
+                  </li>
+                  <li>
+                    <div class="light"></div>
+                  </li>
+                  <li>
+                    <div class="light"></div>
+                  </li>
+                </ul>
+              </div>
+              <div class="grid grid-3">
+                <li>
+                  <div class="light"><span><span></div>
+                </li>
+                <li>
+                  <div class="light"><span><span></div>
+                </li>
+                <li>
+                  <div class="light"><span><span></div>
+                </li>
+                <li>
+                  <div class="light"><span><span></div>
+                </li>
+                <li>
+                  <div class="light"><span><span></div>
+                </li>
+                <li>
+                  <div class="light"><span><span></div>
+                </li>
+                <li>
+                  <div class="light"><span><span></div>
+                </li>
+                <li>
+                  <div class="light"><span><span></div>
+                </li>
+                <li>
+                  <div class="light"><span><span></div>
+                </li>
+                <li>
+                  <div class="light"><span><span></div>
+                </li>
+              </div>
+              <div class="grid grid-4">
+                <ul>
+                  <li>
+                    <div class="light"></div>
+                  </li>
+                  <li>
+                    <div class="light"></div>
+                  </li>
+                  <li>
+                    <div class="light"></div>
+                  </li>
+                  <li>
+                    <div class="light light-8"></div>
+                  </li>
+                  <li>
+                    <div class="light  light-6"></div>
+                  </li>
+                  <li>
+                    <div class="light  light-7"></div>
+                  </li>
+                  <li>
+                    <div class="light"></div>
+                  </li>
+                  <li>
+                    <div class="light"></div>
+                  </li>
+                  <li>
+                    <div class="light"></div>
+                  </li>
+                  <li>
+                    <div class="light"></div>
+                  </li>
+                  <li>
+                    <div class="light"></div>
+                  </li>
+                  <li>
+                    <div class="light"></div>
+                  </li>
+                  <li>
+                    <div class="light light-4"></div>
+                  </li>
+                  <li>
+                    <div class="light  light-4"></div>
+                  </li>
+                  <li>
+                    <div class="light"></div>
+                  </li>
+                  <li>
+                    <div class="light  light-1"></div>
+                  </li>
+                </ul>
+              </div>
+              <div class="grid grid-5">
+                <ul>
+                  <li>
+                    <div class="light"></div>
+                  </li>
+                  <li>
+                    <div class="light light-8"></div>
+                  </li>
+                  <li>
+                    <div class="light  light-2"></div>
+                  </li>
+                  <li>
+                    <div class="light"></div>
+                  </li>
+                  <li>
+                    <div class="light  light-3"></div>
+                  </li>
+                  <li>
+                    <div class="light light-4"></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-    </body>
+        <div id="wopr-logo"> <img src="img/wopr.png"/></div>
+      </section>
+      <div id="launch-panel">
+        <div class="launch-panel-inset">
+          <div class="launch-door"></div>
+          <a class="launch-button"><span>Launch</span></a> </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-1.12.3.min.js"></script>
+  <script src="js/angular.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/fastclick.js"></script>
+
+  <script>
+  $(function(){
+    FastClick.attach(document.body);
+  });
+  function Activate() {
+      $(this).addClass('active');
+      console.log(this);
+    };
+  </script>
+
+</body>
 </html>
