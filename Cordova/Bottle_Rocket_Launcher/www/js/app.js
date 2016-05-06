@@ -2,6 +2,7 @@ var app = angular.module('BottleRocketLauncher', []);
 
 
 app.controller('BottleRocketLauncherController', function($scope, RocketButtonFactory){
+	this.mode = 0; // 0 = Immediate Launch, 1 = Multi-Launch
 	this.rocketButtons = [];
 	for (var i = 0; i < 8; i++) {
 		this.rocketButtons.push(new RocketButtonFactory(1<<i,i+1));
